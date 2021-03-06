@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "219340787307",
+    "firebase_url": "https://persian-programmer.firebaseio.com",
+    "project_id": "persian-programmer",
+    "storage_bucket": "persian-programmer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219340787307:android:32a8c6cf2a0399c8f2eb2e",
+        "android_client_info": {
+          "package_name": "com.perisanprogrammer.burglaralarmmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219340787307-ijn69hk0nfor1f6a25uh8qvrvsq1mnve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4-vt_DcT9V6bUoS5Y1EWd97MUQ5q67vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219340787307-ijn69hk0nfor1f6a25uh8qvrvsq1mnve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
