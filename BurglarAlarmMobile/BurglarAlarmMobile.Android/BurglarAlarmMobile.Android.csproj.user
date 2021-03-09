@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>device_pie</SelectedDevice>
     <DefaultDevice>device_pie</DefaultDevice>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

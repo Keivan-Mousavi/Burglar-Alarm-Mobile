@@ -26,5 +26,32 @@ using Android.App;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 // Add some common permissions, these can be removed if not needed
+
+[assembly: Application(UsesCleartextTraffic = true)]
+
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+[assembly: UsesPermission(Android.Manifest.Permission.Flashlight)]
+[assembly: UsesPermission(Android.Manifest.Permission.AccessCoarseLocation)]
+[assembly: UsesPermission(Android.Manifest.Permission.AccessFineLocation)]
+[assembly: UsesPermission(Android.Manifest.Permission.Camera)]
+[assembly: UsesPermission(Android.Manifest.Permission.WakeLock)]
+[assembly: UsesPermission(Android.Manifest.Permission.ReadExternalStorage)]
+[assembly: UsesPermission(Android.Manifest.Permission.Vibrate)]
+[assembly: UsesPermission(Android.Manifest.Permission.AccessNetworkState)]
+[assembly: UsesPermission(Android.Manifest.Permission.AccessNotificationPolicy)]
+[assembly: UsesPermission(Android.Manifest.Permission.BindNotificationListenerService)]
+[assembly: UsesPermission(Android.Manifest.Permission.BindCarrierMessagingClientService)]
+[assembly: UsesPermission(Android.Manifest.Permission.BindCarrierMessagingService)]
+[assembly: UsesPermission(Android.Manifest.Permission.SendRespondViaMessage)]
+[assembly: UsesPermission(Android.Manifest.Permission.ReceiveWapPush)]
+[assembly: UsesPermission(Android.Manifest.Permission.ReceiveBootCompleted)]
+[assembly: UsesPermission(Android.Manifest.Permission.ForegroundService)]
+[assembly: UsesPermission(Android.Manifest.Permission.InstantAppForegroundService)]
+[assembly: UsesPermission(Android.Manifest.Permission.LocationHardware)]
+
+[assembly: UsesFeature("android.hardware.camera", Required = true)]
+[assembly: UsesFeature("android.hardware.camera.autofocus", Required = true)]
+[assembly: UsesFeature("android.hardware.location", Required = true)]
+[assembly: UsesFeature("android.hardware.location.gps", Required = true)]
+[assembly: UsesFeature("android.hardware.location.network", Required = true)]
