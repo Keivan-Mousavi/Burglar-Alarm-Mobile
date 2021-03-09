@@ -27,7 +27,7 @@
 	<permission android:name="com.perisanprogrammer.burglaralarmmobile.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 	<permission android:name="com.perisanprogrammer.burglaralarmmobile.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
 	<service android:exported="true" android:permission="true" android:stopWithTask="false" android:name="com.perisanprogrammer.burglaralarmmobile.CustomizeFirebaseMessagingService" />
-	<application android:label="BurglarAlarmMobile.Android" android:theme="@style/MainTheme">
+	<application android:label="BurglarAlarmMobile" android:theme="@style/MainTheme">
 		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
 		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
 			<intent-filter>

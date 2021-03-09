@@ -8,7 +8,7 @@ namespace BurglarAlarmMobile.Droid
     [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
     public class CustomizeFirebaseIIDService : FirebaseInstanceIdService
     {
-        const string TAG = "MyFirebaseIIDService";
+        const string TAG = "CustomizeFirebaseIIDService";
         public override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Id;
