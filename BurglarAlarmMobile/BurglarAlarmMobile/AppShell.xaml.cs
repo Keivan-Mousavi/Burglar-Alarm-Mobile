@@ -1,7 +1,5 @@
-﻿using BurglarAlarmMobile.ViewModels;
-using BurglarAlarmMobile.Views;
+﻿using BurglarAlarmMobile.Views;
 using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace BurglarAlarmMobile

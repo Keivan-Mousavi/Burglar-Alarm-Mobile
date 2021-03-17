@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace BurglarAlarmMobile.Views
 {
@@ -10,6 +7,11 @@ namespace BurglarAlarmMobile.Views
         public AboutPage()
         {
             InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            wvFrame.Source = "http://burglaralarm.persianprogrammer.com/home/ShowFrameIndex";
         }
     }
 }

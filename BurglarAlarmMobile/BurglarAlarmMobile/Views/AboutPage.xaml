@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <!--<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -47,6 +47,10 @@
                         TextColor="White" />
             </StackLayout>
         </ScrollView>
-    </Grid>
+    </Grid>-->
+
+    <!--<Image x:Name="img" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />-->
+
+    <WebView x:Name="wvFrame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
 
 </ContentPage>
