@@ -51,6 +51,8 @@
 
     <!--<Image x:Name="img" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />-->
 
-    <WebView x:Name="wvFrame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+    <!--<WebView x:Name="wvFrame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />-->
+
+    <Image VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="NightCity.gif" IsAnimationPlaying="True" />
 
 </ContentPage>

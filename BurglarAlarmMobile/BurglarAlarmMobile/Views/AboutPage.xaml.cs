@@ -11,7 +11,7 @@ namespace BurglarAlarmMobile.Views
 
         protected override async void OnAppearing()
         {
-            wvFrame.Source = "http://burglaralarm.persianprogrammer.com/home/ShowFrameIndex";
+           // wvFrame.Source = "http://burglaralarm.persianprogrammer.com/home/ShowFrameIndex";
         }
     }
 }
