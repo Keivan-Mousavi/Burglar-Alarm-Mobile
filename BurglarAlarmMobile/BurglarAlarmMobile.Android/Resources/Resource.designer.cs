@@ -8682,26 +8682,26 @@ namespace BurglarAlarmMobile.Droid
 			// aapt resource value: 0x7f020056
 			public const int avd_hide_password = 2130837590;
 			
-			// aapt resource value: 0x7f020095
-			public const int avd_hide_password_1 = 2130837653;
-			
 			// aapt resource value: 0x7f020096
-			public const int avd_hide_password_2 = 2130837654;
+			public const int avd_hide_password_1 = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int avd_hide_password_3 = 2130837655;
+			public const int avd_hide_password_2 = 2130837655;
+			
+			// aapt resource value: 0x7f020098
+			public const int avd_hide_password_3 = 2130837656;
 			
 			// aapt resource value: 0x7f020057
 			public const int avd_show_password = 2130837591;
 			
-			// aapt resource value: 0x7f020098
-			public const int avd_show_password_1 = 2130837656;
-			
 			// aapt resource value: 0x7f020099
-			public const int avd_show_password_2 = 2130837657;
+			public const int avd_show_password_1 = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int avd_show_password_3 = 2130837658;
+			public const int avd_show_password_2 = 2130837658;
+			
+			// aapt resource value: 0x7f02009b
+			public const int avd_show_password_3 = 2130837659;
 			
 			// aapt resource value: 0x7f020058
 			public const int btn_checkbox_checked_mtrl = 2130837592;
@@ -8865,11 +8865,11 @@ namespace BurglarAlarmMobile.Droid
 			// aapt resource value: 0x7f02008d
 			public const int notification_icon_background = 2130837645;
 			
-			// aapt resource value: 0x7f020093
-			public const int notification_template_icon_bg = 2130837651;
-			
 			// aapt resource value: 0x7f020094
-			public const int notification_template_icon_low_bg = 2130837652;
+			public const int notification_template_icon_bg = 2130837652;
+			
+			// aapt resource value: 0x7f020095
+			public const int notification_template_icon_low_bg = 2130837653;
 			
 			// aapt resource value: 0x7f02008e
 			public const int notification_tile_bg = 2130837646;
@@ -8878,13 +8878,16 @@ namespace BurglarAlarmMobile.Droid
 			public const int notify_panel_notification_icon_bg = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int tooltip_frame_dark = 2130837648;
+			public const int room = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int tooltip_frame_light = 2130837649;
+			public const int tooltip_frame_dark = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int xamarin_logo = 2130837650;
+			public const int tooltip_frame_light = 2130837650;
+			
+			// aapt resource value: 0x7f020093
+			public const int xamarin_logo = 2130837651;
 			
 			static Drawable()
 			{

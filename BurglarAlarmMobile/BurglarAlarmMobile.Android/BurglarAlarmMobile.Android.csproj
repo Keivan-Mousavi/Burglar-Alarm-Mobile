@@ -122,7 +122,7 @@
     <AndroidResource Include="Resources\drawable\chart.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\livingRoom.png" />
+    <AndroidResource Include="Resources\drawable\room.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
