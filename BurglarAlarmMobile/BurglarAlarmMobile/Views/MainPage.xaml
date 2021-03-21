@@ -5,77 +5,132 @@
              BackgroundColor="#1d1d1f">
     <ContentPage.Content>
         <StackLayout>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="220" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Row="0" Grid.Column="0">
+            <ScrollView>
+                <Grid>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="220" />
                         <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="80*" />
-                        <ColumnDefinition Width="10*" />
-                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0" Text="Smart House" VerticalTextAlignment="Center" Margin="10,0,0,0" FontSize="20" FontAttributes="Bold" />
-                    <Image Grid.Row="0" Grid.Column="1" Source="notification.png" Margin="5" />
-                    <Image Grid.Row="0" Grid.Column="2" Source="chart.png" Margin="5" />
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80*" />
+                            <ColumnDefinition Width="10*" />
+                            <ColumnDefinition Width="10*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Smart House" VerticalTextAlignment="Center" Margin="10,0,0,0" FontSize="20" FontAttributes="Bold" />
+                        <Image Grid.Row="0" Grid.Column="1" Source="notification.png" Margin="5" />
+                        <Image Grid.Row="0" Grid.Column="2" Source="chart.png" Margin="5" />
+                    </Grid>
+
+                    <Image Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="nightCity.gif" IsAnimationPlaying="True" />
+
+                    <Grid Grid.Row="2" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="160" />
+                            <RowDefinition Height="160" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="5" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" FontSize="20" Text="Living Room" FontAttributes="Bold" />
+                                <Label Grid.Row="1" Grid.Column="0" FontSize="14" Text="Checking apartment door" />
+                                <Image Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="room.png" />
+                            </Grid>
+                        </Frame>
+
+                        <Frame Grid.Row="0" Grid.Column="2" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" FontSize="20" Text="Parking" FontAttributes="Bold" />
+                                <Label Grid.Row="1" Grid.Column="0" FontSize="14" Text="Checking parking door" />
+                                <Image Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="parking.png" />
+                            </Grid>
+                        </Frame>
+
+                        <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" FontSize="20" Text="Bathroom" FontAttributes="Bold" />
+                                <Label Grid.Row="1" Grid.Column="0" FontSize="14" Text="Checking bathroom and WC" />
+                                <Image Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="bathroom.png" />
+                            </Grid>
+                        </Frame>
+
+                        <Frame Grid.Row="1" Grid.Column="2" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" FontSize="20" Text="Kitchen" FontAttributes="Bold" />
+                                <Label Grid.Row="1" Grid.Column="0" FontSize="14" Text="Checking kitchen" />
+                                <Image Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="kitchen.png" />
+                            </Grid>
+                        </Frame>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="90" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" FontSize="14" FontAttributes="Bold" Text="Checking" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <Image Grid.Row="0" Grid.Column="1" Source="ajaxLoader.gif" IsAnimationPlaying="True" />
+                        <Label Grid.Row="0" Grid.Column="2" FontSize="14" FontAttributes="Bold" Text="Security Is Good" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="#07db86" />
+                    </Grid>
                 </Grid>
-
-                <Image Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="nightCity.gif" IsAnimationPlaying="True" />
-
-                <Grid Grid.Row="2" Grid.Column="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="160" />
-                        <RowDefinition Height="160" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="5" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="5" />
-                    </Grid.ColumnDefinitions>
-
-                    <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="10">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="30" />
-                                <RowDefinition Height="30" />
-                                <RowDefinition Height="*" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <Label Grid.Row="0" Grid.Column="0" FontSize="20" Text="Living Room" FontAttributes="Bold" />
-                            <Label Grid.Row="1" Grid.Column="0" FontSize="14" Text="Checking apartment door" />
-                            <Image Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="room.png" />
-                        </Grid>
-                    </Frame>
-
-                    <Frame Grid.Row="0" Grid.Column="2" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="5">
-
-                    </Frame>
-
-                    <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="5">
-
-                    </Frame>
-
-                    <Frame Grid.Row="1" Grid.Column="2" BackgroundColor="#46464a" CornerRadius="5" Margin="5" Padding="5">
-
-                    </Frame>
-                </Grid>
-                
-
-            </Grid>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
