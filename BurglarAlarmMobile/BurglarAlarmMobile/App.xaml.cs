@@ -1,5 +1,4 @@
 ﻿using BurglarAlarmMobile.Models;
-using BurglarAlarmMobile.Services;
 using System.Net.Http;
 using Xamarin.Forms;
 
@@ -11,7 +10,6 @@ namespace BurglarAlarmMobile
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
