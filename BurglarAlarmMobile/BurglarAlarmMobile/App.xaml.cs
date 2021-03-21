@@ -1,21 +1,18 @@
 ﻿using BurglarAlarmMobile.Models;
 using BurglarAlarmMobile.Services;
-using BurglarAlarmMobile.Views;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace BurglarAlarmMobile
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new AppShell();
         }
 
         protected override async void OnStart()

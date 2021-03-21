@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BurglarAlarmMobile.Models
+﻿namespace BurglarAlarmMobile.Models
 {
     public interface INotification
     {
