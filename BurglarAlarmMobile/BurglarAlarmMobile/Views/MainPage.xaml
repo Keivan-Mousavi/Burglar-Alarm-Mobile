@@ -2,9 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurglarAlarmMobile.Views.MainPage"
-             BackgroundColor="#1d1d1f"
-              Shell.TabBarIsVisible="False"
-             Shell.NavBarIsVisible="False">
+             BackgroundColor="#1d1d1f">
+    
     <ContentPage.Content>
         <StackLayout>
             <ScrollView>

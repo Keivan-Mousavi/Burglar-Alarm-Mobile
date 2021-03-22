@@ -2,12 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurglarAlarmMobile.Views.LivingRoomPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#1d1d1f">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <WebView Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10" Source="http://burglaralarm.persianprogrammer.com/ShowFrameIndex" />
+
+                    <Frame Grid.Row="2" Grid.Column="0" WidthRequest="150" HeightRequest="250" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="#46464a" HasShadow="True" CornerRadius="15" Padding="10">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="25" />
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="25" />
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Source="shutdown.png" />
+                            <Label Grid.Column="1" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="TV Controller" />
+
+                            <Image Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Source="plus.png" />
+                            <Label Grid.Column="0" Grid.Row="3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Volume" />
+                            <Image Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" Source="minus.png" />
+
+                            <Image Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Source="circledTop.png" />
+                            <Label Grid.Column="1" Grid.Row="3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Channel" />
+                            <Image Grid.Column="1" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" Source="circledBottom.png" />
+
+                        </Grid>
+                    </Frame>
+
+                </Grid>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
