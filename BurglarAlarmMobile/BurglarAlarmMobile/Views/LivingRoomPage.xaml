@@ -33,16 +33,36 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-                            <Image Grid.Column="0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Source="shutdown.png" />
+                            <Image Grid.Column="0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Source="shutdown.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ControllerTV}" CommandParameter="0x20DF10EF" />
+                                </Image.GestureRecognizers>
+                            </Image>
                             <Label Grid.Column="1" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="TV Controller" />
 
-                            <Image Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Source="plus.png" />
+                            <Image Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Source="plus.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ControllerTV}" CommandParameter="0x20DF40BF" />
+                                </Image.GestureRecognizers>
+                            </Image>
                             <Label Grid.Column="0" Grid.Row="3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Volume" />
-                            <Image Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" Source="minus.png" />
+                            <Image Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" Source="minus.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ControllerTV}" CommandParameter="0x20DFC03F" />
+                                </Image.GestureRecognizers>
+                            </Image>
 
-                            <Image Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Source="circledTop.png" />
+                            <Image Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Source="circledTop.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ControllerTV}" CommandParameter="0x20DF00FF" />
+                                </Image.GestureRecognizers>
+                            </Image>
                             <Label Grid.Column="1" Grid.Row="3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Channel" />
-                            <Image Grid.Column="1" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" Source="circledBottom.png" />
+                            <Image Grid.Column="1" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" Source="circledBottom.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ControllerTV}" CommandParameter="0x20DF807F" />
+                                </Image.GestureRecognizers>
+                            </Image>
 
                         </Grid>
                     </Frame>

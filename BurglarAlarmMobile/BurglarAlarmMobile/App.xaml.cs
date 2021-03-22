@@ -15,16 +15,23 @@ namespace BurglarAlarmMobile
 
         protected override async void OnStart()
         {
-            string deviceId = DependencyService.Get<INotificationUser>().GetToken();
-
-            using (var client = new HttpClient())
+            try
             {
-                var responce = await client.GetAsync(string.Format("http://burglaralarm.persianprogrammer.com/ManageNotification/AddDeviceIdNotification?key={0}", deviceId));
+                string deviceId = DependencyService.Get<INotificationUser>().GetToken();
 
-                if (responce.IsSuccessStatusCode && responce.StatusCode == System.Net.HttpStatusCode.OK)
+                using (var client = new HttpClient())
                 {
-                    var json = await responce.Content.ReadAsStringAsync();
+                    var responce = await client.GetAsync(string.Format("http://burglaralarm.persianprogrammer.com/ManageNotification/AddDeviceIdNotification?key={0}", deviceId));
+
+                    if (responce.IsSuccessStatusCode && responce.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        var json = await responce.Content.ReadAsStringAsync();
+                    }
                 }
+            }
+            catch
+            {
+
             }
         }
 

@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using BurglarAlarmMobile.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace BurglarAlarmMobile.Views
 {
-    //[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LivingRoomPage : ContentPage
     {
         public LivingRoomPage()
         {
             InitializeComponent();
+
+            BindingContext = new LivingRoomViewModel();
         }
     }
 }
